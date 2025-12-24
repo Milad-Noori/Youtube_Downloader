@@ -1,0 +1,10 @@
+
+version: "3.9"
+services:
+  ytbot:
+    build: .
+    container_name: ytbot
+    restart: always
+    env_file: .env
+    volumes:
+      - ./downloads:/app/downloads
